@@ -1,0 +1,84 @@
+1)#simple calculator
+c=input("enter a string:")
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+if(c=='+'):
+ print(a,"+",b,":",(a+b)) elif(c=='-'):
+   print(a,"-",b,":",(a-b))
+elif(c=='*'):
+  print(a,"*",b,":",(a*b))
+elif(c=='/'):
+  print(a,"/",b,":",(a/b))
+elif(c=='%'):
+  print(a,"%",b,":",(a%b))
+elif(c=='**'):
+  print(a,"**",b,":",pow(a,b))
+elif(c=='//'):
+  print(a,"//",b,":",(a//b))
+else:
+ print("invalid output")
+ 
+
+2)#simple interest
+p=int(input("enter the value of p:"))
+t=int(input("enter the value of t:"))
+r=int(input("enter the value of r:"))
+si=((p*t*r)/100)
+print("simple interest:",si)
+
+
+
+3)#area of circle
+r=int(input("enter the radius value:"))
+area=3.142*r*r
+print("area of circle",area)
+
+
+
+4)#area of the triangle
+b=float(input("enter the base value:"))
+h=float(input("enter the height value:"))
+area=0.5*b*h
+print("area of the triangle",area)
+
+
+
+5)#to convert temperature from celsius to farenheit
+c=float(input("enter the temperature value in celsius:"))
+f=(1.8*c)+32
+print("temperature in farenheit:",f)
+
+
+
+6)#area of rectangle
+l=float(input("enter the length:"))
+b=float(input("enter the breadth:"))
+area=l*b
+print("area of rectangle:",area)
+
+
+
+7)#perimeter of square
+a=float(input("enter the side value:"))
+perimeter=4*a
+print("perimeter of the square:",perimeter)
+
+
+
+8)#circumference of circle
+r=float(input("enter the radius value:"))
+c=2*3.142*r
+print("circumference of the circle:",c)
+
+
+
+9)#swapping of two numbers
+a=int(input("enter a value:"))
+b=int(input("enter b value:"))
+print("value of a before swapping:",a)
+print("value of b before swapping;",b)
+a=a+b
+b=a-b
+a=a-b
+print("value of a after swapping:",a)
+print("value of b after swapping;",b)
