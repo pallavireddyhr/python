@@ -1,0 +1,108 @@
+                          Name:-Pallavi H R
+                          Sec:-B4
+                          Roll no:-321910304047
+                          Sub:-python
+                          Sem:-2nd sem
+
+(1)to check whether a person is eligible for voting or not using if-else
+x=int(input("enter the age of the person:"))
+if(x>=18):
+	print("that person is elgible for voting")
+else:
+	print("that person is not elgible for voting")
+
+
+
+(2)to check whether a number is even or odd using if-else
+x=int(input("enter the number:"))
+if((x%2)==0):
+	print(x,"is a even number")
+else:
+	print(x,"is a odd number")
+
+
+(3)to check whether a number is prime or not using if-else
+c=0
+x=int(input("enter the number:"))
+z=x
+for i in range(2,x):
+	y=x%2
+	if(y==0):
+	  c=c+1
+if(c>0):
+	print(z,"is not a prime number")
+else:
+	print(z,"is a prime number")
+
+
+(4)to check whether a number is positive or not using if-else.
+n=int(input("enter the number:"))
+if(n>0):
+	print(n,"is a positive number")
+else:
+	print(n,"is a negative number")
+
+
+(5)using nested-if to check whether a number is positive or negative or zero
+n=int(input("enter the number:"))
+if(n>=0):
+	if(n==0):
+		print(n,"is zero")
+	else:
+		print(n,"is positive number")
+else:
+	print(n,"is negative number")
+
+
+(6) to find the roots of a quadratic equation using elif
+a=float(input("enter the value of a:"))
+b=float(input("enter the value of b:"))
+c=float(input("enter the value of c:"))
+if(a==0):
+	print("it is not a quadratic equation")
+else:
+	d=((b*b)-(4*a*c))
+	if(d==0):
+		print("the roots are real and equal")
+		x=(-b/(2*a))
+		y=x
+		print(x,"and",y,"are the roots of the quadratic equation")
+	elif(d>0):
+		print("the roots are real and distinct")
+		e=pow(d,0.5)
+		x=((-b+e)/(2*a))
+		y=((-b-e)/(2*a))
+		print(x,"and",y,"are the roots of quadratic equation")
+	else:
+		print("the roots are imaginary")
+		e=pow(d,0.5)
+		x=(-b/(2*a))
+		y=(e/(2*a))
+		print(x,"+i",y,"and",x,"-i",y,"are the roots of quadratic equation")
+
+
+
+(7)program to accept a number(1-5) and print the given number in words using nested-if
+n=int(input("enter the number:"))
+if((n==1)|(n==2)|(n==3)|(n==4)|(n==5)):
+	if(0<n<6):
+		if(n==1):
+			print("one")
+		if(n==2):
+			print("two")
+		if(n==3):
+			print("three")
+		if(n==4):
+			print("four")
+		if(n==5):
+			print("five")
+else:
+	print("reject the number")
+
+
+(8)program to read a character and print the given character is vowel or consonant.
+ch=input("enter a character:")
+if((ch=='a')|(ch=='A')|(ch=='e')|(ch=='E')|(ch=='i')|(ch=='I')|(ch=='o')|(ch=='O')|(ch=='u')|(ch=='U')):
+	print(ch,"is a vowel")
+else:
+	print(ch,"is a consonant")
