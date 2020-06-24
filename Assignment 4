@@ -1,0 +1,58 @@
+
+# 1)python function to find the max of three numbers
+def maximum(a,b,c):
+  if a>b and a>c:
+    print("maximum is :",a)
+  elif b>a and b>c:
+    print("maximum is :",b)
+  else:
+    print("maximum is :",c)
+a=12
+b=6
+c=18
+print(maximum(a,b,c))
+maximum is : 18
+None
+
+# 2)python program to reverse the string
+string=input("enter the string:")
+string2=''
+for i in string:
+    string2=i+string2
+print("\nThe original string=",string)
+print("The reversed string=",string2)
+enter the string:network
+
+The original string= network
+The reversed string= krowten
+
+# 3)python function to check whether the number is prime or not
+num=int(input("enter a number: "))
+for i in range(2,num):
+    if num %i ==0:
+        print(" It is not a prime number")
+        break
+    else:
+         print(" It is a prime number")
+enter a number: 4
+ It is not a prime number
+
+# 4)python program to find a given number is palindrome or not using try,except,else and finally block
+num=input("enter any number:")
+try:
+    x=int(num)
+    if num==num[::-1]:
+        print("Given number is palindrome")
+    else:
+        print("Given number is not palindrome")
+except:
+        print("Invalid number")
+enter any number:495
+Given number is not palindrome
+
+# 5)python program to find sum of squares for n natural numbers
+def squaresum(n):
+    return (n*(n+1)*(2*n+1))//6
+n=5
+print(squaresum(n))
+55
