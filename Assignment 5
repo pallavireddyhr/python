@@ -1,0 +1,79 @@
+Pallavi H R
+321910304047
+
+In [1]:
+import math
+def area_of_circle(r): 
+    a = r**2 * math.pi
+    return a
+
+r = float(input("Enter the radius of the circle: "))
+print("Area of circle is", area_of_circle(r))
+Enter the radius of the circle: 4
+Area of circle is 50.26548245743669
+In [2]:
+import math
+if __name__=="__main__":
+      num_sides = int(input("Enter the number of sides: "))
+side_length = float(input("Enter the side: "))
+def polygon_area(n_sides, length):
+            area = (n_sides * (length ** 2)) / (4 * math.tan((math.pi) / n_sides))
+            print(area)
+
+polygon_area(num_sides, side_length)
+Enter the number of sides: 5
+Enter the side: 2
+6.881909602355869
+In [3]:
+import math
+diamStr=input("Enter the length of the diameter:   ")
+d=int(diamStr)
+chordStr = input( " Enter the chord length:          ")
+chord = int(chordStr)
+radius = (d/2)
+theta = math.acos((radius**2 + radius**2 - chord**2)/(2*radius**2))
+area = 1/2 * (theta - math.sin(theta)) * radius**2
+print("The area of segment of circle is ",area)
+Enter the length of the diameter:   4
+ Enter the chord length:          3
+The area of segment of circle is  1.407934832627481
+In [4]:
+import random
+test_list=[100,1,2,3,30,40,"hai","hello"]
+print("The orginal list is:"+ str(test_list))
+random.shuffle(test_list)
+print("The shuffled list is:"+ str(test_list))
+The orginal list is:[100, 1, 2, 3, 30, 40, 'hai', 'hello']
+The shuffled list is:['hai', 3, 2, 'hello', 40, 1, 30, 100]
+In [5]:
+print("A random number between 1 and 10000 is:",end="")
+print(random.random())
+print("A random number from range 1 and 50 is:",end="")
+print(random.randrange(1,50))
+A random number between 1 and 10000 is:0.3707989610884418
+A random number from range 1 and 50 is:12
+In [6]:
+import math
+print(math.sin(60))
+print(math.cos(180))
+print(math.tan(90))
+print(math.sinh(0.8660254037844386))
+print(math.pow(5,8))
+print(math.sqrt(400))
+print(math.pow(5,2.71828))
+print(math.log2(1024))
+print(math.log10(1024))
+print(math.ceil(23.56))
+print(math.floor(23.56))
+-0.3048106211022167
+-0.5984600690578582
+-1.995200412208242
+0.9784113245910249
+390625.0
+20.0
+79.432125413701
+10.0
+3.010299956639812
+24
+23
+In [ ]:
