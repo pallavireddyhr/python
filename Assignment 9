@@ -1,0 +1,50 @@
+Pallavi H R
+321910304047
+
+
+#program to sum all the items in a list
+l1=[]
+total_num=int(input("enter the total numbers:"))
+for i in range(total_num):
+    x=int(input("enter the number:"))
+    l1.append(x)
+print("sum of the numbers is:",sum(l1))
+
+#program to multiplies all the items in a list
+l1=[]
+tot=int(input("enter the total numbers:"))
+product=1
+for i in range(tot):
+    x=int(input("enter the number:"))
+    l1.append(x)
+    product=product*x
+print("the multipies of all the items in a list is",product)
+
+
+
+#program to get the largest and smallest number from the list
+l1=[2,-6,-21,7,81,4,100]
+x=min(l1)
+y=max(l1)
+print("the smallest number in the list is",x)
+print("the largest number in the list is",y)
+
+
+
+#program to remove duplicate elements from a list
+l1=[1,1,2,2,3,3,4,5,5]
+l2=[]
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+print(l2)
+
+
+
+#program to check a list is empty or not
+l1=[]
+x=len(l1)
+if x==0:
+    print("the list is empty")
+else:
+    print("the list is not empty")
