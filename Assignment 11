@@ -1,0 +1,51 @@
+ #program to read first n lines of a file
+f=open("2.txt")
+n=int(input("enter the number of lines to be read"))
+for i in range(n):
+    print(f.readline())
+ #program to read an entire text file
+fh=open("1.txt")
+print(fh.read())
+ #program to read last n lines of a file
+fh=open("2.txt","r")
+l1=fh.readlines()
+m=len(l1)
+n=int(input("ener n:"))
+print(l1[(m-n):])
+#program to append text to a file and display the text
+fh=open("2.txt","a")
+x=input("Enter string to be appended:")
+fh.write(x)
+fh.close()
+fh=open("2.txt","r")
+print(fh.read())
+ #program to read a file line by line store it into a variable
+fh=open("2.txt","r")
+str=''
+for i in fh:
+    str=str+i
+print(str)
+#program to copy the contents of a file to another file
+fh=open("2.txt","a")
+fi=open("1.txt","r")
+for i in fi:
+    fh.write(i)
+fh.close()
+fh=open("2.txt","r")
+print(fh.read())
+ #program to get the file size of a plain file
+fh=open("2.txt","r")
+str=fh.read()
+print(len(str))
+ #program to read a file line by line and store it into a list 
+fh=open("2.txt","r")
+l1=[]
+for i in fh:
+    l1.append(i)
+print(l1)
+ #program to count the number of lines in a text file
+fh=open("2.txt","r")
+l1=[]
+for i in fh:
+    l1.append(i)
+print(len(l1))
