@@ -1,0 +1,78 @@
+Pallavi H R
+321910304047
+
+
+
+#program to sum all the items in a dictionary
+dict1={'a':4,'b':5,'c':8}
+sum=0
+for i in dict1:
+    sum=sum+dict1[i]
+print("sum of the values in the dictionary is",sum)
+
+#program to concate two dictionaries
+dict1={1:'a',2:'b',3:'c',4:'d'}
+dict2={5:'e',6:'f',7:'g',8:'h'}
+dict1.update(dict2)
+print(dict1)
+
+
+
+#program to add keys/values in a dictionary(update dictionary)
+dict1={'a':1}
+dict2={}
+while True:
+    key=input("enter the key:")
+    if key=="done":
+        break
+    values=input("enter value:")
+    dict2[key]=values
+dict1.update(dict2)
+print("after adding keys and values the dictionary is:",dict1)
+
+
+
+#program to find the length of a dictionary
+dict1={1:'a',2:'b',3:'c',4:'d',5:'e'}
+x=len(dict1)
+print("length of dict1 is",x)
+
+
+
+#program to demonstrate accessing an element from a Dictionary
+dict1={}
+print("enter key and values:")
+print('!!!enter done twice to stop !!!')
+while True:
+    key=input('enter key:')
+    value=input('enter value:')
+    if key=='done' or value=='done':
+        break
+    dict1[key]=value
+key1=input('enter key element to be accessed:')
+if key1 in dict1:
+    print('element is ',dict1[key1])
+else:
+    print('element not found')
+
+
+
+#program to remove items from the dictionary
+dict1={}
+print("enter key and values:")
+print('!!!enter done twice to stop !!!')
+while True:
+    key=input('enter key:')
+    value=input('enter value:')
+    if key=='done' or value=='done':
+        break
+    dict1[key]=value
+    
+print("before removing the item the dictionary is:",dict1)
+print('!!!enter done to stop entering key!!!:')
+while True:
+    key=input('enter key element of item to be deleted:')
+    if key=='done':
+        break
+    del dict1[key]
+print("after removing the items the dictionary is:",dict1)
