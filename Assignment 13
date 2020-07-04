@@ -1,0 +1,131 @@
+#(3)program to sum all the items in a list
+l1=[]
+n=int(input("enter total no of elements:"))
+for i in range(n):
+    x=int(input("enter the number:"))
+    l1.append(x)
+print(l1)
+print("sum of all elements in the list is:",sum(l1))
+
+#(4)program to create a list of empty dictionaries
+l1=[]
+d={}
+n=int(input("enter total no of empty dictionaries:"))
+for i in range(n):
+    l1.append(d)
+print(l1)
+
+
+
+
+#(5)program to access dictionary keys element by index
+d={'a':1,'b':2,'c':3,'d':4,'e':5}
+print(list(d)[4])
+
+
+
+
+#(6)program to iterate over dictionaries using for loops
+d={'a':1,'b':2,'c':3,'d':4,'e':5}
+for i in d:
+    print(i,d[i])
+
+
+
+#(7)program to sum all the items in a dictionary
+d={1:2,3:4,5:6}
+sum1=0
+sum2=0
+for i in d:
+    sum1=sum1+i
+    sum2=sum2+d[i]
+sum3=sum1+sum2
+print("the sum of all items in the dictionary:",sum3)
+
+
+
+#(8,9)to concatenate dictionaries and to create a new one
+d1={1:10, 2:20}
+d2={3:30, 4:40}
+d3={5:50,6:60}
+d2.update(d3)
+d1.update(d2)
+print(d1)
+
+
+
+
+#(10)program to create a tuple
+l=[]
+n=int(input("enter the number of elements to be created in a tuple:"))
+for i in range(n):
+    x=input("enter the element:")
+    l.append(x)
+t=tuple(l)
+print(t)
+
+
+
+
+#(11)program to create a tuple with different data types 
+number=int(input("enter a number:"))
+floating=float(input("enter a floating point number:"))
+string=input("enter a string:")
+tuple1=(number,floating,string)
+print(tuple1)
+
+
+
+#(12)program to convert a tuple to a string 
+t=('v','i','n','d','h','y','a')
+s=''.join(t)
+print(s)
+
+
+
+#(13)program to slice a tuple 
+t=('v','i','n','d','h','y','a')
+slice1=t[3:]
+slice2=t[:-5]
+slice3=t[3:5]
+slice4=t[-7:-3]
+print(slice1)
+print(slice2)
+print(slice3)
+print(slice4)
+
+
+
+#(14)program to find the length of a tuple
+t=('v','i','n','d','h','y','a')
+x=len(t)
+print("the length of the tuple is",x)
+
+
+
+#(15)program to convert a tuple to a dictionary
+t=('1a','2b','3c','4d','5e')
+dict1=dict(t)
+print(dict1)
+
+
+
+#(16)program to reverse a tuple 
+t=('v','i','n','d','h','y','a')
+revt=tuple(reversed(t))
+print("the reversed tuple is:",revt)
+
+
+
+#(17)program to convert a list of tuples into a dictionary 
+t=(('a','b'),('c','d'),('e','f'),('g','h'))
+dict1=dict(t)
+print(dict1)
+
+
+
+#(18)program to convert a list to a tuple
+list1=[1,2,3,4,5,6,7,8,9]
+tuple1=tuple(list1)
+print("after converting a list to a tuple:")
+print(tuple1)
